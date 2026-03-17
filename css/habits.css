@@ -1,0 +1,124 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header button {
+  cursor: pointer;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Add Habit */
+.habit-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.habit-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.habit-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Progress */
+.habit-progress {
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  height: 12px;
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #4caf50;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.motivation-text {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Habit List */
+.habit-list-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habit-list-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.habit-list-section li:hover {
+  transform: translateY(-2px);
+}
+
+.habit-list-section li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.habit-list-section li button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Empty State */
+.empty-msg {
+  text-align: center;
+  color: #dcf402;
+  display: none;
+}

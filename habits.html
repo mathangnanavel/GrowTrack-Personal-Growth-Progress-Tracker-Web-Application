@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowTrack - Habits Tracker</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/habits.css">
+</head>
+
+<body>
+  <header>
+    <h1>Habits Tracker</h1>
+    <button type="button" id="backBtn">← Back</button>
+  </header>
+
+  <main>
+    <!-- Add Habit -->
+    <section class="habit-form">
+      <input type="text" id="habitName" placeholder="Add new habit..." />
+      <button id="addHabitBtn">Add</button>
+    </section>
+
+    <!-- Progress -->
+    <section class="habit-progress">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <p>
+        Completed <span id="completedCount">0</span> /
+        <span id="totalCount">0</span>
+      </p>
+
+      <!-- Motivation Text -->
+      <p id="motivationText" class="motivation-text"></p>
+    </section>
+
+    <!-- Habit List -->
+    <section class="habit-list-section">
+      <!-- Empty state -->
+      <p id="emptyMsg" class="empty-msg">
+        No habits yet. Start building discipline 💪
+      </p>
+
+      <ul id="habitList"></ul>
+    </section>
+  </main>
+
+  <script src="js/habits.js"></script>
+</body>
+</html>

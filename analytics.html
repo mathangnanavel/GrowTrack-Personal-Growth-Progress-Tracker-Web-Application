@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowTrack - Analytics</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/analytics.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <button id="backBtn">← Back</button>
+    <h1>Analytics</h1>
+  </header>
+
+  <main>
+    <section class="analytics-cards">
+      <div class="card">
+        <h3>Total Habits</h3>
+        <p id="totalHabits">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Completed Habits</h3>
+        <p id="completedHabits">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Current Streak</h3>
+        <p id="currentStreak">0</p>
+      </div>
+    </section>
+
+    <section class="analytics-chart">
+      <canvas id="habitChart"></canvas>
+    </section>
+  </main>
+
+  <script src="js/analytics.js"></script>
+</body>
+</html>

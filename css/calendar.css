@@ -1,0 +1,119 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Calendar container */
+.calendar-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Nav */
+.calendar-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-nav button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.calendar-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #334155;
+}
+
+/* Legend */
+.calendar-legend {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.today-dot {
+  background: #2563eb;
+}
+
+.done-dot {
+  background: #4caf50;
+}
+
+/* Calendar grid */
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-day {
+  width: 12%;
+  margin: 1%;
+  padding: 15px;
+  background: #e5e7eb;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calendar-day:hover {
+  transform: translateY(-2px);
+}
+
+/* Today */
+.calendar-day.today {
+  border: 2px solid #2563eb;
+  font-weight: bold;
+}
+
+/* Completed */
+.calendar-day.completed {
+  background: #4caf50;
+  color: #fff;
+}
+
+/* Selected */
+.calendar-day.selected {
+  outline: 3px solid #111827;
+}

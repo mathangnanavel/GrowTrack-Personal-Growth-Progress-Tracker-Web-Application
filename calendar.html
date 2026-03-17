@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GrowTrack - Calendar</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+
+  <header>
+    <button id="backBtn">← Back</button>
+    <h1>Calendar</h1>
+  </header>
+
+  <main>
+    <div class="calendar-container">
+
+      <div class="calendar-nav">
+        <button id="prevMonth">◀</button>
+        <div class="calendar-title" id="monthYear"></div>
+        <button id="nextMonth">▶</button>
+      </div>
+
+      <div class="calendar-legend">
+        <span><span class="dot today-dot"></span> Today</span>
+        <span><span class="dot done-dot"></span> Habit Done</span>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+  </main>
+
+  <script src="js/calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowTrack - Dashboard</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- Stats Cards -->
+<section class="dashboard-cards">
+
+  <div class="card">
+    <h3>Total Habits</h3>
+    <p id="totalHabits">0</p>
+  </div>
+
+  <div class="card">
+    <h3>Completed Habits</h3>
+    <p id="completedHabits">0</p>
+  </div>
+
+  <div class="card">
+    <h3>Current Streak</h3>
+    <div class="streak-main">
+      <span id="streakCount">0</span>
+      <span class="streak-fire">🔥</span>
+    </div>
+  </div>
+
+  <div class="card streak-days-card">
+    <h3>Streak Days</h3>
+    <p id="currentStreak">0</p>
+  </div>
+
+</section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+      <a href="habits.html" class="link-card">✅ Habits Tracker</a>
+      <a href="analytics.html" class="link-card">📊 Analytics</a>
+      <a href="calendar.html" class="link-card">🗓 Calendar</a>
+      <a href="profile.html" class="link-card">👤 Profile</a>
+    </section>
+
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
